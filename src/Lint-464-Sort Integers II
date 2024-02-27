@@ -49,4 +49,6 @@ class Solution:
             a[left + k] = tmp[k]
     
 
-    # merge sort模版
+    # merge sort 最优化模版
+    #       time: O(nlogn)
+    #       space: O(n)
