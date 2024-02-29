@@ -62,7 +62,7 @@ class Solution:
     @param k: An integer
     @return: The index after partition
     """
-    def partition_array(self, nums: List[int], k: int) -> int:
+    def partition_array(self, nums, k):
         # write your code here
         left, right = 0, len(nums) - 1
         while left <= right:
