@@ -23,7 +23,7 @@ class Solution:
     @param a: an array
     @return: total of reverse pairs
     """
-    def reverse_pairs(self, a: List[int]) -> int:
+    def reverse_pairs(self, a):
         # write your code here
         tmp = [0 for _ in range(len(a))]
         count = [0]
