@@ -1,58 +1,58 @@
 
-'''
-**Description**
+# '''
+# **Description**
 
-Given an array `nums` of integers and an int `k`, partition the array (i.e move the elements in "nums") such that:
+# Given an array `nums` of integers and an int `k`, partition the array (i.e move the elements in "nums") such that:
 
-- All elements < *k* are moved to the *left*
-- All elements >= *k* are moved to the *right*
+# - All elements < *k* are moved to the *left*
+# - All elements >= *k* are moved to the *right*
 
-Return the partitioning index, i.e the first index *i* nums[*i*] >= *k*.
+# Return the partitioning index, i.e the first index *i* nums[*i*] >= *k*.
 
-**Example**
+# **Example**
 
-**Example 1:**
+# **Example 1:**
 
-Input:
+# Input:
 
-```
-nums = []
-k = 9
+# ```
+# nums = []
+# k = 9
 
-```
+# ```
 
-Output:
+# Output:
 
-```
-0
+# ```
+# 0
 
-```
+# ```
 
-Explanation:
+# Explanation:
 
-Empty array, print 0.
+# Empty array, print 0.
 
-**Example 2:**
+# **Example 2:**
 
-Input:
+# Input:
 
-```
-nums = [3,2,2,1]
-k = 2
+# ```
+# nums = [3,2,2,1]
+# k = 2
 
-```
+# ```
 
-Output:
+# Output:
 
-```
-1
+# ```
+# 1
 
-```
+# ```
 
-Explanation:
+# Explanation:
 
-the real array is[1,2,2,3].So return 1.
-'''
+# the real array is[1,2,2,3].So return 1.
+# '''
 
 
 
