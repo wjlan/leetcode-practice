@@ -26,8 +26,8 @@ class Solution:
     """
     def sort_colors(self, nums: List[int]):
         # write your code here
-        i = 0
-        j = 0
+        i = 0     # i mark the last index for 0
+        j = 0     # j mark the last index for 1
         for n in range(len(nums)):
             v = nums[n]
             nums[n] = 2
