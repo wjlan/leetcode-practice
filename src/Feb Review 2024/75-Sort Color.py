@@ -46,10 +46,10 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        self.partition_array(nums, 1)
+        self.partition_array(nums, 1)    # partition k只保证左边小于k，右边大于等于k但无序
         self.partition_array(nums, 2)
  
-    def partition_array(self, nums, k):
+    def partition_array(self, nums, k):  
         last_small_pointer = -1
         for i in range(len(nums)):
             if nums[i] < k:
