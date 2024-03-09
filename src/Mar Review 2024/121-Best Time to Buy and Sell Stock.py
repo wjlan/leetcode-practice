@@ -36,16 +36,15 @@ class Solution:
 # 同向双指针
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        l, r = 0, 1
-        maxP = 0
-        while r < len(prices):
-            if prices[l] < prices[r]:
-                maxP = max(maxP, prices[r] - prices[l])
+        left = 0
+        max_profit = 0
+        for right in range(1, len(prices)):
+            if prices[right] > prices[left]:
+                max_profit = max(max_profit, prices[right] - prices[left])
             else:
-                l = r
-            r += 1
+                left = right
         
-        return maxP
+        return max_profit
     
 
 # Kadane算法
