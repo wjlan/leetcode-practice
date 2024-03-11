@@ -56,3 +56,5 @@ class Solution:
             max_ending_here = max(0, max_ending_here + prices[i] - prices[i - 1])
             max_profit = max(max_profit, max_ending_here)
         return max_profit
+
+    # max_ending_here 指的是ending的那个点为股票卖出点，不管股票买入点是之前的哪个点。Kadane算法就是在每一个扫描点计算以该点为结束点的情况下的结果（即最佳子结构）从而去打擂台。每个位置为终点的计算结果都是基于前一个点为终点的情况来计算
